@@ -116,8 +116,10 @@ Please type the corresponding letter for the year you wish to search: ''')
             except:
                 print('\nSearch parameter is not present.')
         elif (sex_input != 'CANCEL'):
-            if (sex_input == 'M' or sex_input == 'F'):
-                search_options['Sex'] = sex_input
+            if (sex_input == 'M'):
+                search_options['Sex'] = 'Male'
+            elif (sex_input == 'F'):
+                search_options['Sex'] = 'Female'
             else:
                 input('\nInvalid response.')
 
